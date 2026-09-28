@@ -1,0 +1,161 @@
+body {
+    background: #f2f3f7;
+}
+
+.sidebar {
+    width: 240px;
+    height: 100vh;
+    background: #fff;
+    border-right: 1px solid #dedede;
+    display: flex;
+    flex-direction: column;
+}
+
+.side-links li {
+    padding: 10px 0;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.side-links li:hover {
+    color: blue;
+}
+
+.upgrade {
+    text-align: center;
+    background: #eef1ff;
+    padding: 15px;
+    border-radius: 12px;
+}
+
+.folder-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: 0.25s;
+}
+
+.folder-card:hover {
+    transform: translateX(-5px);
+}
+
+.soft-blue {
+    background: #d7e9ff;
+}
+
+.soft-pink {
+    background: #ffd8d8;
+}
+
+.soft-yellow {
+    background: #e5dba0;
+}
+
+.add-folder {
+    text-align: center;
+    border: 2px dashed #bbb;
+}
+
+
+/* =========================
+   NOTES SECTION
+   ========================= */
+
+.note-card {
+    position: relative;
+    min-height: 180px;
+    padding: 22px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: 0.25s;
+}
+
+.note-card:hover {
+    transform: translateY(-3px);
+}
+
+
+/* Note Colors */
+
+.bg-yellow {
+    background: #fff3b0;
+}
+
+.bg-blue {
+    background: #cfe5ff;
+}
+
+.bg-red {
+    background: #ffd1d1;
+}
+
+
+/* Note Title */
+
+.note-card h6 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 5px 0 12px;
+    padding-right: 50px;
+}
+
+
+/* Note Description */
+
+.note-card p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+    margin: 0;
+}
+
+
+/* Edit & Delete Icons */
+
+.note-actions {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+.note-actions i {
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.note-actions i:hover {
+    color: blue;
+}
+
+
+/* =========================
+   RESPONSIVE
+   ========================= */
+
+@media (max-width: 768px) {
+
+    .sidebar {
+        width: 200px;
+    }
+
+    .note-card {
+        min-height: 160px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+    }
+
+    .note-card {
+        min-height: 150px;
+    }
+}
+
